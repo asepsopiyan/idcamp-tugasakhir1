@@ -11,11 +11,13 @@ const addbtn = document.body.querySelector('nav ul li:nth-child(4)')
 addbtn.appendChild(btnOwner)
 
 
+
 btnOwner.addEventListener('click', function(){
     
     const asideFeatured = document.body.getElementsByTagName('aside')[0]
     asideFeatured.classList.toggle('featured')
 
+    // show and hide profile
     if (asideFeatured.style.display === 'block'){
         asideFeatured.style.display = 'none'
     } else {
